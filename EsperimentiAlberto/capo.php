@@ -13,7 +13,7 @@
 
         if($_GET['errore'] < 5){
 
-         $page = file_get_contents("PopUp.html");
+         $page = file_get_contents("main.html");
          echo $page;
 
          echo "<p class='box_errore'>";
