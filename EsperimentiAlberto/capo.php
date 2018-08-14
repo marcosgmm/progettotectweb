@@ -6,7 +6,6 @@
 
     $page = file_get_contents("home.html");
     $ba =file_get_contents("bottonea.html");
-    $bb =file_get_contents("bottoneb.html");
 
 
     if(isset($_GET['errore'])){
@@ -54,13 +53,11 @@
 
     if(isset($_GET['nome'])){
         $aux = $_GET['nome'];
-        $page = str_replace('$ACCEDI$', $aux, $page);
-        $page = str_replace('$REGISTRATI$', '', $page);
+        $page = str_replace('$ACCEDI$', $aux, "Ciao".$page);
         echo $page;
         exit;
     } else{
         $page = str_replace('$ACCEDI$', $ba, $page);
-        $page = str_replace('$REGISTRATI$', $bb, $page);
         echo $page;
     }
 
