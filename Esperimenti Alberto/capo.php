@@ -5,7 +5,7 @@
     session_start();
 
     $page = file_get_contents("home.html");
-    $ba =file_get_contents("bottonea.html");
+    $ba =file_get_contents("PopUp.html");
     $bb =file_get_contents("bottoneb.html");
         
 
@@ -13,7 +13,7 @@
         
         if($_GET['errore'] < 5){
             
-         $page = file_get_contents("main.html");
+         $page = file_get_contents("PopUp.html");
          echo $page;
             
          echo "<p class='box_errore'>";
@@ -43,7 +43,7 @@
         }
         else{
             
-            $page = file_get_contents("accesso.html");
+            $page = file_get_contents("PopUp.html");
             echo $page;
             echo "<p class='box_errore'>";
             echo "La password o e-mail digitate sono sbagliate";
