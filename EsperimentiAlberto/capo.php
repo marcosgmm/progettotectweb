@@ -5,7 +5,7 @@
     session_start();
 
     $page = file_get_contents("home.html");
-    $ba =file_get_contents("accesso.html");
+    $ba =file_get_contents("bottonea.html");
     $bb =file_get_contents("bottoneb.html");
 
 
