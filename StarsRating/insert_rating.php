@@ -4,7 +4,7 @@ if(isset($_POST['submit_rating']))
   $host="localhost";
   $username="root";
   $password="";
-  $databasename="sample";
+  $databasename="prova";
 
   $connect=mysql_connect($host,$username,$password);
   $db=mysql_select_db($databasename);

@@ -41,7 +41,7 @@
     $select_rating=$conn -> query($comandoSQL);
     $total=mysql_num_rows($select_rating);
 
-    while($row=$select_rating->mysql_fetch_array())
+    while($row = $select_rating->mysql_fetch_array())
     {
 	  $phpar[]=$php;
 	  $aspar[]=$asp;
