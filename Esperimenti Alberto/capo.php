@@ -4,15 +4,18 @@
 
     session_start();
 
-    $page = file_get_contents("main.html");
-
+    $page = file_get_contents("home.html");
+    $ba =file_get_contents("bottonea.html");
+    $bb =file_get_contents("bottoneb.html");
+        
 
     if(isset($_GET['errore'])){
-
+        
         if($_GET['errore'] < 5){
-
+            
+         $page = file_get_contents("main.html");
          echo $page;
-
+            
          echo "<p class='box_errore'>";
 
             switch ($_GET['errore']) {
@@ -33,21 +36,34 @@
                     echo "La lunghezza della password deve essere minimo di 8 caratteri!";
                     break;
             }
-
-            exit;
-
+            
+            
+            exit();
+            
         }
         else{
-
+            
             $page = file_get_contents("accesso.html");
             echo $page;
             echo "<p class='box_errore'>";
             echo "La password o e-mail digitate sono sbagliate";
             exit;
-
+        
         }
    }
 
-echo $page;
+    if(isset($_GET['nome'])){
+        $aux = $_GET['nome'];
+        $page = str_replace('$ACCEDI$', $aux, $page);
+        $page = str_replace('$REGISTRATI$', '', $page);
+        echo $page;
+        exit;
+    } else{
+        $page = str_replace('$ACCEDI$', $ba, $page);
+        $page = str_replace('$REGISTRATI$', $bb, $page);
+        echo $page;
+    }
+
+
 
 ?>
