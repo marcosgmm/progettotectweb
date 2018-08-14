@@ -18,7 +18,7 @@
 
         if ($autenticato){
             $ComandoSQLperaccesso = "select Nome from utente where email ='" . $email ."'";
-            $Aux = $conn->query($ComandoSQLperaccesso); 
+            $Aux = $conn->query($ComandoSQLperaccesso);
             $Name = $Aux->fetch_assoc();
             $NomeUtente = $Name['Nome'];
             mysqli_close($conn);
