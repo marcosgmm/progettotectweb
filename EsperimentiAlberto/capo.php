@@ -53,7 +53,7 @@
 
     if(isset($_GET['nome'])){
         $aux = $_GET['nome'];
-        $page = str_replace('$ACCEDI$', $aux, "Ciao ".$aux);
+        $page = str_replace('$ACCEDI$', "Ciao ".$aux, $page);
         echo $page;
         exit;
     } else{
