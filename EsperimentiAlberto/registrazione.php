@@ -37,10 +37,15 @@
 
 			$comandoSQL = "insert into utenti values ( null ,'". $email ."','" . $psw ."','" . $Nome . "','" . $Cognome . "')";
 
-			$risultato = $conn->query($comandoSQL);
+			$risultato = $conn -> query($comandoSQL);
 
 			if ($risultato){
-				header("Location: capo.php?nome=$Nome");
+                $ComandoSQLperaccesso = "select id from utenti where email ='" . $email ."'";
+                $Aux = $conn->query($ComandoSQLperaccesso);
+                $Name = $Aux->fetch_assoc();
+                $idUtente = $Name['id'];
+                mysqli_close($conn);
+				header("Location: capo.php?nome=$idUtente");
     		}
     		else{
     			mysqli_close($conn);

@@ -17,12 +17,12 @@
         }
 
         if ($autenticato){
-            $ComandoSQLperaccesso = "select Nome from utenti where email ='" . $email ."'";
+            $ComandoSQLperaccesso = "select id from utenti where email ='" . $email ."'";
             $Aux = $conn->query($ComandoSQLperaccesso);
             $Name = $Aux->fetch_assoc();
-            $NomeUtente = $Name['Nome'];
+            $idUtente = $Name['id'];
             mysqli_close($conn);
-            header("Location: capo.php?nome=$NomeUtente");
+            header("Location: capo.php?nome=$idUtente");
             exit;
         } else{
             mysqli_close($conn);
