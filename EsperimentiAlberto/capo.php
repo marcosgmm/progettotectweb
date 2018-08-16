@@ -52,8 +52,14 @@
    }
 
     if(isset($_GET['nome'])){
-        $aux = $_GET['nome'];
-        $page = str_replace('$ACCEDI$', $aux, $page);
+        $aux = $_GET['nome']; //prendo l'id dell'utente
+        $conn = new mysqli("localhost","root","", "prova");
+        $ComandoSQLperaccesso = "select nome from utenti where id ='" . $aux ."'";
+        $Aux = $conn->query($ComandoSQLperaccesso);
+        $Name = $Aux->fetch_assoc();
+        $NomeUtente = $Name['nome'];
+        mysqli_close($conn);
+        $page = str_replace('$ACCEDI$', $NomeUtente, $page);
         echo $page;
         exit;
     } else{
