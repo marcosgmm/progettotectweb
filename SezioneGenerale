@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it"> 
+	<head> 
+		<title>Titolo del documento</title> 
+        <meta charset="UFT-8">
+        <meta name="description" content="descrizione pagina">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Marco Seganfreddo,Antonio Belculfinè,Alberto Cherobin">
+	</head> 
+	<body>  
+          
+        <img src="..." alt="Logo" height=".." width="..">
+<div>
+ <ul class="navbar">
+     
+  <li><a href="#">Eventi</a></li>
+    <li><a href="#">Cucina</a></li>
+    <li><a href="#">Teatro</a></li>
+    <li><a href="#">Novita'</a></li>
+    <li><a href="#">Arte</a></li>
+    <li><a href="#">Attrazioni</a></li>
+    <li><a href="#">Biglietti</a></li>
+        </ul>
+</div>
+       <h1>Sezione Generale</h1>
+<h2>Nome immagine</h2>
+
+<p>Descrizione Immagine</p>
+
+<figure>
+  <img src="....">
+  <figcaption>Breve descrizione Foto</figcaption>
+</figure>
+        
+       
+
+
+    </body>
+</html>
