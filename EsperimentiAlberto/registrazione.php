@@ -1,7 +1,5 @@
 <?php
 
-
-	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		//ok la pagina è stata davvero richiamata dalla form
 
 		$email = $_POST['Email']; //recupero il contenuto della casella email
@@ -37,12 +35,12 @@
 				exit;
 			}
 
-			$comandoSQL = "insert into utente values ('". $email ."','" . $psw ."','" . $Nome . "','" . $Cognome . "')";
+			$comandoSQL = "insert into utenti values ( null ,'". $email ."','" . $psw ."','" . $Nome . "','" . $Cognome . "')";
 
 			$risultato = $conn->query($comandoSQL);
 
 			if ($risultato){
-				header("Location: capo.php");
+				header("Location: capo.php?nome=$Nome");
     		}
     		else{
     			mysqli_close($conn);
@@ -53,6 +51,6 @@
 
 		}
 
-	}
+
 
 ?>
