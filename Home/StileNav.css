@@ -5,6 +5,42 @@ body {margin:0;}
   background-color: #99CBFF;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.upnav form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #000000;
+  max-width:300px
+}
+
+.upnav form.search button {
+  float: right;
+  width: 3%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.upnav form.search button:hover {
+  background: #0b7dda;
+}
+
+.upnav form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .upnav a{
   float: right;
   display: block;
