@@ -1,9 +1,7 @@
 <?php
 require_once "db.php";
 require_once "functions.php";
-// Here the user id is harcoded.
-// You can integrate your authentication code here to get the logged in user id
-$userId = 1;
+$userId = 7;
 
 $query = "SELECT * FROM tbl_restaurant ORDER BY id DESC";
 $result = mysqli_query($conn, $query);
@@ -27,13 +25,12 @@ foreach ($result as $row) {
         } else {
             $outputString .= '<li value="' . $count . '"  id="' . $starRatingId . '" class="star" onclick="addRating(' . $row['id'] . ',' . $count . ');" onMouseOver="mouseOverRating(' . $row['id'] . ',' . $count . ');">&#9733;</li>';
         }
-    } // endFor
+    }
 
     $outputString .= '
  </ul>
 
  <p class="review-note">Total Reviews: ' . $totalRating . '</p>
- <p class="text-address">' . $row["address"] . '</p>
 </div>
  ';
 }

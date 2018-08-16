@@ -23,7 +23,7 @@ li.star {
 }
 
 li.star.selected {
-    color: #ff6e00;
+    color: #ffff00;
 }
 
 .row-title {
@@ -40,15 +40,12 @@ li.star.selected {
     margin-bottom: 20px;
     border-bottom: #F0F0F0 1px solid;
 }
-p.text-address {
-    font-size: 12px;
-}
+
 </style>
 </head>
 
 <body onload="showRestaurantData('getRatingData.php')">
     <div class="container">
-        <h2>Star Rating System using PHP and Javascript</h2>
         <span id="restaurant_list"></span>
     </div>
 </body>
@@ -77,7 +74,7 @@ p.text-address {
         for (var i = 1; i <= rating; i++)
         {
             var ratingId = restaurantId + "_" + i;
-            document.getElementById(ratingId).style.color = "#ff6e00";
+            document.getElementById(ratingId).style.color = "#ffff00";
 
         }
     }
@@ -96,7 +93,7 @@ p.text-address {
        if(userRating !=0) {
     	       for (var i = 1; i <= userRating; i++) {
     	    	      ratingId = restaurantId + "_" + i;
-    	          document.getElementById(ratingId).style.color = "#ff6e00";
+    	          document.getElementById(ratingId).style.color = "#ffff00";
     	       }
        }
        if(userRating <= 5) {

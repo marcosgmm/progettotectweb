@@ -2,13 +2,4 @@
 
 $conn = new mysqli("localhost", "root", "", "dabase");
 
-$comandoSQL = "select name from tbl_restaurant where id = 1";
-
-if($ris = $conn -> query($comandoSQL)){
-
-if($riga = $ris -> fetch_assoc()){
-
-echo "Il nome e': ".$riga['name']."!";  }
-}
-
 ?>
