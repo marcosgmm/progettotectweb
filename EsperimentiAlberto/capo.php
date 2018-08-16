@@ -4,7 +4,7 @@
 
     session_start();
 
-    $page = file_get_contents("NavigationBar.html");
+    $page = file_get_contents("NavigationBar1.html");
     $ba =file_get_contents("bottonea.html");
 
 
