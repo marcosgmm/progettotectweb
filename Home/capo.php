@@ -76,6 +76,7 @@
             $page = str_replace('$PAGINA$', $paginaeventi, $page);
              echo $page;
              exit;
+           }
         }
 
           if(isset($_GET['pagina'])){
@@ -86,8 +87,7 @@
         }
     }
 
- }
          echo $page;
-     }
+  }
 
 ?>
