@@ -6,7 +6,8 @@
 
     $page = file_get_contents("NavigationBar1.html");
     $ba =file_get_contents("bottonea.html");
-
+    $paginaeventi = file_get_contents("eventi.html");
+    $paginahome = file_get_contents("home.html");
 
     if(isset($_GET['errore'])){
 
@@ -64,11 +65,29 @@
         $page = str_replace('$ACCEDI$', "", $page);
         echo $page;
         exit;
-    } else{
+    }
+     else{
+
         $page = str_replace('$ACCEDI$', $ba, $page);
         $page = str_replace('$UTENTE$', "", $page);
-        echo $page;
+
+        if(isset($_GET['pagina'])){
+          if($_GET['pagina'] == "eventi"){
+            $page = str_replace('$PAGINA$', $paginaeventi, $page);
+             echo $page;
+             exit;
+        }
+
+          if(isset($_GET['pagina'])){
+          if($_GET['pagina'] == "home"){
+             $page = str_replace('$PAGINA$', $paginahome, $page);
+             echo $page;
+             exit;
+        }
     }
 
+ }
+         echo $page;
+     }
 
 ?>
