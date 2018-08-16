@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Ago 14, 2018 alle 12:03
+-- Creato il: Ago 16, 2018 alle 15:43
 -- Versione del server: 10.1.34-MariaDB
 -- Versione PHP: 7.2.7
 
@@ -25,10 +25,11 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struttura della tabella `utente`
+-- Struttura della tabella `utenti`
 --
 
-CREATE TABLE `utente` (
+CREATE TABLE `utenti` (
+  `id` int(11) NOT NULL,
   `email` varchar(45) NOT NULL,
   `psw` varchar(45) NOT NULL,
   `Nome` varchar(45) NOT NULL,
@@ -36,24 +37,33 @@ CREATE TABLE `utente` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dump dei dati per la tabella `utente`
+-- Dump dei dati per la tabella `utenti`
 --
 
-INSERT INTO `utente` (`email`, `psw`, `Nome`, `Cognome`) VALUES
-('alberto.cherobin@gmail.com', 'Alberto15', 'Nadia', 'Biasia'),
-('c@c.com', 'qqqqqqqq', 'Pinco', 'Smusi'),
-('ciao@gmail.com', 'cavoloche', 'Pinco', 'sssss'),
-('hello@gmail.com', 'alberto15', 'Pietro', 'Pallo');
+INSERT INTO `utenti` (`id`, `email`, `psw`, `Nome`, `Cognome`) VALUES
+(5, 'alberto.cherobin@gmail.com', 'qqqqqqqq', 'aaaa', 'sss'),
+(6, 'hello@gmail.com', 'alberobello', 'Nadia', 'Biasia'),
+(7, 'albechero@gmail.com', 'antonioemarco', 'Albe', 'Chero');
 
 --
 -- Indici per le tabelle scaricate
 --
 
 --
--- Indici per le tabelle `utente`
+-- Indici per le tabelle `utenti`
 --
-ALTER TABLE `utente`
-  ADD PRIMARY KEY (`email`);
+ALTER TABLE `utenti`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT per le tabelle scaricate
+--
+
+--
+-- AUTO_INCREMENT per la tabella `utenti`
+--
+ALTER TABLE `utenti`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
