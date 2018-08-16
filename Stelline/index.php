@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Star Rating System using PHP and Javascript</title>
+
 <style>
 body {
     width: 550px;
