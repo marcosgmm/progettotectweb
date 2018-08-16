@@ -4,7 +4,7 @@
 
 		$conn = new mysqli("localhost","root","", "prova");
 
-		$comandoSQL = "select psw from utente where email ='" . $email ."'";
+		$comandoSQL = "select psw from utenti where email ='" . $email ."'";
 
 		$risultatoAccesso = $conn -> query($comandoSQL);
 
@@ -17,7 +17,7 @@
         }
 
         if ($autenticato){
-            $ComandoSQLperaccesso = "select Nome from utente where email ='" . $email ."'";
+            $ComandoSQLperaccesso = "select Nome from utenti where email ='" . $email ."'";
             $Aux = $conn->query($ComandoSQLperaccesso);
             $Name = $Aux->fetch_assoc();
             $NomeUtente = $Name['Nome'];
