@@ -28,7 +28,7 @@
 
 		$conn = new mysqli("localhost","root","", "prova");
 
-		$comandoSQL = "select psw from utente where email ='" . $email ."'";
+		$comandoSQL = "select psw from utenti where email ='" . $email ."'";
 
 		$risultatoAccesso = $conn->query($comandoSQL);
 
