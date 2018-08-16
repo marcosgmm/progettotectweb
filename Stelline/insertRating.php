@@ -1,8 +1,6 @@
 <?php
 require_once ('db.php');
-// Here the user id is harcoded.
-// You can integrate your authentication code here to get the logged in user id
-$userId = 1;
+$userId = 7; //USERid
 
 if (isset($_POST["index"], $_POST["restaurant_id"])) {
 
@@ -19,6 +17,6 @@ if (isset($_POST["index"], $_POST["restaurant_id"])) {
         $result = mysqli_query($conn, $insertQuery);
         echo "success";
     } else {
-        echo "Already Voted!";
+        echo "Hai già votato!";
     }
 }
