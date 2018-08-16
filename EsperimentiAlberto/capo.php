@@ -4,7 +4,7 @@
 
     session_start();
 
-    $page = file_get_contents("home.html");
+    $page = file_get_contents("NavigationBar.html");
     $ba =file_get_contents("bottonea.html");
 
 
@@ -58,15 +58,17 @@
         $Aux = $conn->query($ComandoSQLperaccesso);
         $Name = $Aux->fetch_assoc();
         $NomeUtente = $Name['nome'];
+        $NomeUtente = strtoupper($NomeUtente);
         mysqli_close($conn);
-        $page = str_replace('$ACCEDI$', $NomeUtente, $page);
+        $page = str_replace('$UTENTE$', $NomeUtente, $page);
+        $page = str_replace('$ACCEDI$', "", $page);
         echo $page;
         exit;
     } else{
         $page = str_replace('$ACCEDI$', $ba, $page);
+        $page = str_replace('$UTENTE$', "", $page);
         echo $page;
     }
-
 
 
 ?>
