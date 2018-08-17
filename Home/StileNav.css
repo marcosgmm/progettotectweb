@@ -45,7 +45,7 @@ body {
 }
 
 .upnav a{
-  margin-right: 50px;
+  float: right;
   display: block;
   color: black;
   text-align: center;
