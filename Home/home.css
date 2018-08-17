@@ -1,18 +1,24 @@
-div.griglia {
-display: table;
-margin: 0px;
+* {
+    box-sizing:
+
+    border-box;
 }
 
-
-div.griglia {
-display: table-cell;
-text-align: center;
+.colonna {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-div.griglia{
-width: auto;
-max-width: 100%;
+.c{
+    text-align: center;
 }
+
 
 h2.m10 {
 /* Box che racchiude la galleria di foto*/
@@ -22,12 +28,5 @@ width : 30%;
 white-space : nowrap;
 overflow-x : scroll;
 border : 1px solid Black;
-<<<<<<< HEAD
-=======
 
 }
-
-
-
-
->>>>>>> origin/master
