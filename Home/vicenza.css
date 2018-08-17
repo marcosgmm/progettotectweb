@@ -15,10 +15,13 @@
 
 }
 
-p. {   <!--spazio vuoto-->
+p. {
   width: 50px;
   height: 50px;
   background: white;
 }
 
 
+.b{
+    margin-right: 20px;
+}
