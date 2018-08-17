@@ -15,16 +15,11 @@ body {
     padding: 16px;
     border: 1.5px;
     margin-top: 8px;
-<<<<<<< HEAD
-    margin-right: 0px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    background-image: url(/img/lente.png);
-=======
+
     margin-right: 10px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
->>>>>>> origin/master
+
 }
 
 .upnav input[type=text] {
