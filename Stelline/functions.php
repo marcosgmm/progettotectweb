@@ -7,7 +7,7 @@ function userRating($userId, $restaurantId, $conn)
     $total_row = 0;
 
     if ($result = mysqli_query($conn, $avgQuery)) {
-        // Return the number of rows in result set
+
         $total_row = mysqli_num_rows($result);
     }
 
