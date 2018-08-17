@@ -18,7 +18,9 @@ body {
   float: left;
   width: 70%;
   background: #000000;
-  max-width:300px
+  max-width:300px;
+  margin-top: 5px;
+
 }
 
 .upnav form.search button {
@@ -31,7 +33,7 @@ body {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .upnav form.search button:hover {
@@ -53,6 +55,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   border-bottom: 3px solid transparent;
+
 }
 
 .topnav {
