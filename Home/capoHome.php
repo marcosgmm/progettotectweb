@@ -5,7 +5,7 @@
     session_start();
 
     $page = file_get_contents("NavigationBarUp.html");
-    $Home = file_get_contents("Home.html");
+    $Home = file_get_contents("home.html");
     $ba =file_get_contents("bottonea.html");
     $paginaeventi = file_get_contents("eventi.html");
     $paginahome = file_get_contents("home.html");
