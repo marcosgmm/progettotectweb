@@ -1,18 +1,10 @@
 
 
-.b1 {
+.button {
     background-color: white;
     border: yes;
     color: black;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 12px;
-
+    margin: 0 auto;
 }
 
 

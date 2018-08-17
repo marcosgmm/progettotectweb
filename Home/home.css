@@ -4,20 +4,16 @@
     border-box;
 }
 
-.colonna {
-    float: left;
-    width: 25%;
-    padding: 5px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+
+.colonna2 {
+  max-width: 4px;
+  max-height: 4px;
+  width: auto;
+  height: auto;
+  display: block;
 }
 
-.c{
-    text-align: center;
-}
+
 
 
 h2.m10 {
