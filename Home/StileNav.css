@@ -2,13 +2,13 @@ body {
     margin:0;
 }
 
-.upnav {
+.upnav{
+  overflow: hidden;
   background-color: #99CBFF;
+  position: sticky;
+  width: 100%
 }
 
-* {
-  box-sizing: border-box;
-}
 
 .upnav button {
     float: right;
@@ -25,44 +25,6 @@ body {
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-}
-
-.upnav form.search input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 70%;
-  background: #000000;
-  max-width:300px;
-  margin-top: 5px;
-  position:absolute;
-  left:20%;
-
-}
-
-.upnav form.search button {
-  float: right;
-  width: 3%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
-  margin-top: 5px;
-
-}
-
-.upnav form.search button:hover {
-  background: #0b7dda;
-}
-
-.upnav form.search::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .upnav a{
