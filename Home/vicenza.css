@@ -1,6 +1,6 @@
 
 
-.button {
+.b1 {
     background-color: white;
     border: yes;
     color: black;
@@ -9,8 +9,11 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 5px;
     cursor: pointer;
     border-radius: 12px;
+
 }
+
+
 
