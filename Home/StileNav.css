@@ -76,6 +76,6 @@ body {margin:0;}
   border-bottom: 3px solid blue;
 }
 
-.topnav active {
+.topnav active { /* sottolineatura per le varie pagine */
     color: blue
 }
