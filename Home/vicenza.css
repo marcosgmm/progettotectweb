@@ -1,14 +1,15 @@
-.b button{
-    padding: 50px;
-    width: 200px;
-}
+.b {border-radius: 12px;}
 
 .button {
-        background-color: #000000;
-        color: #FFFFFF;
-        padding: 10px;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        margin:10px
-    }
+    background-color: white;
+    border: yes;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
