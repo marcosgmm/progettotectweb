@@ -15,9 +15,9 @@ body {
     padding: 16px;
     border: 1.5px;
     margin-top: 8px;
-    margin-right: 0px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    margin-right: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .upnav input[type=text] {
@@ -25,10 +25,10 @@ body {
     padding: 6px;
     border: 1.5px;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-right: 0px;
     font-size: 17px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .upnav a{
