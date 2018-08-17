@@ -1,6 +1,6 @@
-.b {border-radius: 12px;}
 
-.button {
+
+.b {
     background-color: white;
     border: yes;
     color: black;
@@ -13,3 +13,4 @@
     cursor: pointer;
 }
 
+.b {border-radius: 12px;}
