@@ -9,6 +9,10 @@ body {
   width: 100%
 }
 
+.upnav img{
+    float: left;
+}
+
 .upnav button {
     float: right;
     padding: 16px;
