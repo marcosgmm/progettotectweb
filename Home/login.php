@@ -22,7 +22,8 @@
             $Name = $Aux->fetch_assoc();
             $idUtente = $Name['id'];
             mysqli_close($conn);
-            header("Location: capo.php?nome=$idUtente");
+            header("Location: capoHome.php?nome=$idUtente");
+
             exit;
         } else{
             mysqli_close($conn);
