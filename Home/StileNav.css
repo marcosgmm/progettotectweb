@@ -13,18 +13,22 @@ body {
 .upnav button {
     float: right;
     padding: 16px;
-    border: 2px;
+    border: 1.5px;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-right: 0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .upnav input[type=text] {
     float: right;
     padding: 6px;
-    border: none;
+    border: 1.5px;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .upnav a{
