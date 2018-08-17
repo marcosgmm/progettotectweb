@@ -11,6 +11,23 @@ body {
   box-sizing: border-box;
 }
 
+.upnav button {
+    float: right;
+    padding: 16px;
+    border: 2px;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+.upnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
 .upnav form.search input[type=text] {
   padding: 10px;
   font-size: 17px;
@@ -21,7 +38,7 @@ body {
   max-width:300px;
   margin-top: 5px;
   position:absolute;
-    left:20%;
+  left:20%;
 
 }
 
