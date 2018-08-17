@@ -9,3 +9,8 @@
 
 
 
+div.divider{
+    width:50px;
+    height:auto;
+    display:inline-block;
+}
