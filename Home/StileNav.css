@@ -1,4 +1,6 @@
-body {margin:0;}
+body {
+    margin:0;
+}
 
 .upnav {
   overflow: hidden;
@@ -29,6 +31,7 @@ body {margin:0;}
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .upnav form.search button:hover {
@@ -42,7 +45,7 @@ body {margin:0;}
 }
 
 .upnav a{
-  float: right;
+  margin-right: 50px;
   display: block;
   color: black;
   text-align: center;
