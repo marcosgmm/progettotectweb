@@ -3,7 +3,6 @@ body {
 }
 
 .upnav {
-  overflow: hidden;
   background-color: #99CBFF;
 }
 
@@ -64,6 +63,14 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #99CBFF;
+  position: sticky;
+  width: 100%;
+}
+
+div.topnav {
+  position: -webkit-topnav;
+  position: topnav;
+  top: 0;
 }
 
 .topnav a {
@@ -75,6 +82,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   border-bottom: 3px solid transparent;
+
 }
 
 .topnav a:hover {
