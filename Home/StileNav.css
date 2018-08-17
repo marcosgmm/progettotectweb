@@ -3,7 +3,6 @@ body {
 }
 
 .upnav {
-  overflow: hidden;
   background-color: #99CBFF;
 }
 
@@ -64,6 +63,9 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #99CBFF;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
 }
 
 .topnav a {
@@ -75,6 +77,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   border-bottom: 3px solid transparent;
+
 }
 
 .topnav a:hover {
@@ -84,6 +87,14 @@ body {
 .topnav a.active {
   border-bottom: 3px solid blue;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
 
 .topnav active { /* sottolineatura per le varie pagine */
     color: blue

@@ -20,6 +20,20 @@
 
     $PAGINA$
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky")
+  } else {
+    topnav.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
