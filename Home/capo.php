@@ -1,5 +1,3 @@
-<link href="style.css">
-
 <?php
 
     session_start();
@@ -93,4 +91,9 @@
          echo $page;
   }
 
+
+
 ?>
+
+
+
