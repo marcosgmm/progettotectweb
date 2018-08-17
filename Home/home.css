@@ -1,0 +1,32 @@
+
+
+h2.m10 {border-style: solid}
+
+
+
+
+
+div.griglia {
+display: table;
+margin: 20px auto;
+}
+
+
+div.griglia {
+display: table-cell;
+text-align: center;
+}
+
+div.griglia{
+width: auto;
+max-width: 100%;
+}
+
+.griglia {
+/* Box che racchiude la galleria di foto*/
+padding : 0px;
+margin-top : 5px;
+width : 100%;
+white-space : nowrap;
+overflow-x : scroll;
+border : 1px solid Black;
