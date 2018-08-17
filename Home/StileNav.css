@@ -63,9 +63,14 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #99CBFF;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: sticky;
   width: 100%;
+}
+
+div.topnav {
+  position: -webkit-topnav;
+  position: topnav;
+  top: 0;
 }
 
 .topnav a {
@@ -87,14 +92,6 @@ body {
 .topnav a.active {
   border-bottom: 3px solid blue;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
 
 .topnav active { /* sottolineatura per le varie pagine */
     color: blue
