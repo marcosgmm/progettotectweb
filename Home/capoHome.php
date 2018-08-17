@@ -4,8 +4,8 @@
 
     session_start();
 
-    $page = file_get_contents("NavigationBarUp.html");
-    $page2 = file_get_contents("NavigationBarDown.html");
+    $NavBarUp = file_get_contents("NavigationBarUp.html");
+    $Home = file_get_contents("Home.html");
     $ba =file_get_contents("bottonea.html");
     $paginaeventi = file_get_contents("eventi.html");
     $paginahome = file_get_contents("home.html");
@@ -72,25 +72,9 @@
 
         $page = str_replace('$ACCEDI$', $ba, $page);
         $page = str_replace('$UTENTE$', "", $page);
-        $page = str_replace('$DOWN$', $page2, $page);
+        $page = str_replace('$DOWN$', $Home, $page);
 
-        if(isset($_GET['pagina'])){
-          if($_GET['pagina'] == "eventi"){
-            $page = str_replace('$PAGINA$', $paginaeventi, $page);
-             echo $page;
-             exit;
-           }
-        }
-
-          if(isset($_GET['pagina'])){
-          if($_GET['pagina'] == "home"){
-             $page = str_replace('$PAGINA$', $paginahome, $page);
-             echo $page;
-             exit;
-        }
-    }
-
-         echo $page;
+        echo $page;
   }
 
 ?>
