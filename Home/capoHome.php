@@ -3,10 +3,15 @@
     session_start();
 
     $page = file_get_contents("NavigationBarUp.html");
+    $nav2 = file_get_contents("NavigationBarDown.html");
     $Home = file_get_contents("home.html");
     $ba =file_get_contents("bottonea.html");
     $paginaeventi = file_get_contents("eventi.html");
     $paginahome = file_get_contents("home.html");
+    $padova = file_get_contents("padova.html");
+    $vicenza = file_get_contents("vicenza.html");
+    $verona = file_get_contents("verona.html");
+    $venezia = file_get_contents("venezia.html");
 
     if(isset($_GET['errore'])){
 
@@ -71,11 +76,43 @@
     }
      else{
 
-        $page = str_replace('$ACCEDI$', $ba, $page);
-        $page = str_replace('$UTENTE$', "", $page);
-        $page = str_replace('$DOWN$', $Home, $page);
+           if(isset($_GET['pagina'])){
 
-        echo $page;
+                if($_GET['pagina'] == 'padova'){
+                    $page = str_replace('$ACCEDI$', $ba, $page);
+                    $page = str_replace('$UTENTE$', "", $page);
+                    $page = str_replace('$DOWN$', $nav2, $page);
+                    $page = str_replace('$PAGINA$', $padova, $page);
+                    echo $page;                                       }
+
+                if($_GET['pagina'] == 'vicenza'){
+                    $page = str_replace('$ACCEDI$', $ba, $page);
+                    $page = str_replace('$UTENTE$', "", $page);
+                    $page = str_replace('$DOWN$', $nav2, $page);
+                    $page = str_replace('$PAGINA$', $vicenza, $page);
+                    echo $page;                                       }
+
+                if($_GET['pagina'] == 'verona'){
+                    $page = str_replace('$ACCEDI$', $ba, $page);
+                    $page = str_replace('$UTENTE$', "", $page);
+                    $page = str_replace('$DOWN$', $nav2, $page);
+                    $page = str_replace('$PAGINA$', $verona, $page);
+                    echo $page;                                       }
+
+                 if($_GET['pagina'] == 'venezia'){
+                    $page = str_replace('$ACCEDI$', $ba, $page);
+                    $page = str_replace('$UTENTE$', "", $page);
+                    $page = str_replace('$DOWN$', $nav2, $page);
+                    $page = str_replace('$PAGINA$', $venezia, $page);
+                    echo $page;                                       }
+                }
+         else{
+                $page = str_replace('$ACCEDI$', $ba, $page);
+                $page = str_replace('$UTENTE$', "", $page);
+                $page = str_replace('$DOWN$', $Home, $page);
+
+                echo $page;
+         }
   }
 
 ?>

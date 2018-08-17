@@ -9,16 +9,21 @@ body {
   width: 100%
 }
 
+.upnav img{
+    float: left;
+}
 
 .upnav button {
     float: right;
     padding: 16px;
     border: 1.5px;
     margin-top: 8px;
-
     margin-right: 10px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    border-style: solid;
+    background-color: white;
+    border-color: black;
 
 }
 
@@ -31,6 +36,8 @@ body {
     font-size: 17px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    border-style: solid;
+    border-color: black;
 }
 
 .upnav a{
