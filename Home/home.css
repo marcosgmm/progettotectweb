@@ -1,28 +1,20 @@
-* {
-    box-sizing:
-
-    border-box;
-}
 
 
-.colonna2 {
-  max-width: 4px;
-  max-height: 4px;
-  width: auto;
-  height: auto;
-  display: block;
-}
-
-
-
-
-h2.m10 {
+.foto {
 /* Box che racchiude la galleria di foto*/
 padding : 0px;
 margin-top : 5px;
-width : 30%;
-white-space : nowrap;
-overflow-x : scroll;
-border : 1px solid Black;
-
+width : 100%;
 }
+
+.foto img {
+/* Anchor dove è collegata la foto*/
+width : 300px;
+height : 300px;
+padding : 0px;
+margin : 5px;
+background-repeat : no-repeat;
+background-position : center;
+}
+
+
