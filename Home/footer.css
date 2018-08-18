@@ -1,0 +1,27 @@
+*
+    {
+        margin: 0;
+    }
+
+
+
+      .Main
+    {
+        position: relative;
+        min-height:100%;
+
+    }
+
+
+    #Footer
+    {
+        background-color: #99CBFF;
+        color: white;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+
+    }
+
+
+
