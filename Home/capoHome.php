@@ -12,6 +12,7 @@
     $vicenza = file_get_contents("vicenza.html");
     $verona = file_get_contents("verona.html");
     $venezia = file_get_contents("venezia.html");
+    $footer = file_get_contents("footer.html");
 
     if(isset($_GET['errore'])){
 
@@ -83,6 +84,7 @@
                     $page = str_replace('$UTENTE$', "", $page);
                     $page = str_replace('$DOWN$', $nav2, $page);
                     $page = str_replace('$PAGINA$', $padova, $page);
+                    $page = str_replace('$FOOTER$', $footer, $page);
                     echo $page;                                       }
 
                 if($_GET['pagina'] == 'vicenza'){
@@ -90,6 +92,7 @@
                     $page = str_replace('$UTENTE$', "", $page);
                     $page = str_replace('$DOWN$', $nav2, $page);
                     $page = str_replace('$PAGINA$', $vicenza, $page);
+                    $page = str_replace('$FOOTER$', $footer, $page);
                     echo $page;                                       }
 
                 if($_GET['pagina'] == 'verona'){
@@ -97,6 +100,7 @@
                     $page = str_replace('$UTENTE$', "", $page);
                     $page = str_replace('$DOWN$', $nav2, $page);
                     $page = str_replace('$PAGINA$', $verona, $page);
+                    $page = str_replace('$FOOTER$', $footer, $page);
                     echo $page;                                       }
 
                  if($_GET['pagina'] == 'venezia'){
@@ -104,12 +108,16 @@
                     $page = str_replace('$UTENTE$', "", $page);
                     $page = str_replace('$DOWN$', $nav2, $page);
                     $page = str_replace('$PAGINA$', $venezia, $page);
+                    $page = str_replace('$FOOTER$', $footer, $page);
+
                     echo $page;                                       }
                 }
          else{
                 $page = str_replace('$ACCEDI$', $ba, $page);
                 $page = str_replace('$UTENTE$', "", $page);
                 $page = str_replace('$DOWN$', $Home, $page);
+                $page = str_replace('$FOOTER$', $footer, $page);
+
 
                 echo $page;
          }
