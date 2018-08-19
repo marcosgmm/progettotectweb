@@ -9,17 +9,17 @@
         $Cognome = $_POST['Cognome'];
 
         if($email == '' || $Nome == '' || $Cognome == '' || $psw == '' || $psw2 == ''){
-            header("Location: capo.php?errore=1"); //non sono stati compilati dei campi
+            header("Location: capoHome.php?errore=1"); //non sono stati compilati dei campi
             exit;
         }
 
         if(strlen($psw)<8){
-            header("Location: capo.php?errore=4"); //lunghezza della password troppo corta
+            header("Location: capoHome.php?errore=4"); //lunghezza della password troppo corta
             exit;
         }
 
         if($psw != $psw2){
-            header("Location: capo.php?errore=2"); //password digitate non sono uguali
+            header("Location: capoHome.php?errore=2"); //password digitate non sono uguali
             exit;
         }
         else{
@@ -31,7 +31,7 @@
 		$risultatoAccesso = $conn->query($comandoSQL);
 
 			if ($risultatoAccesso->fetch_assoc()) {
-				header("Location: capo.php?errore=3"); //la email è già utilizzata
+				header("Location: capoHome.php?errore=3"); //la email è già utilizzata
 				exit;
 			}
 
@@ -45,7 +45,7 @@
                 $Name = $Aux->fetch_assoc();
                 $idUtente = $Name['id'];
                 mysqli_close($conn);
-				header("Location: capo.php?nome=$idUtente");
+				header("Location: capoHome.php?nome=$idUtente");
     		}
     		else{
     			mysqli_close($conn);

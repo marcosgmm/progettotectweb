@@ -2,23 +2,23 @@
 
     session_start();
 
-    $page = file_get_contents("NavigationBarUp.html");
-    $nav2 = file_get_contents("NavigationBarDown.html");
-    $Home = file_get_contents("home.html");
-    $ba =file_get_contents("bottonea.html");
-    $paginaeventi = file_get_contents("eventi.html");
-    $paginahome = file_get_contents("home.html");
-    $padova = file_get_contents("padova.html");
-    $vicenza = file_get_contents("vicenza.html");
-    $verona = file_get_contents("verona.html");
-    $venezia = file_get_contents("venezia.html");
-    $footer = file_get_contents("footer.html");
+    $page = file_get_contents("../HTML/NavigationBarUp.html");
+    $nav2 = file_get_contents("../HTML/NavigationBarDown.html");
+    $Home = file_get_contents("../HTML/home.html");
+    $ba =file_get_contents("../HTML/bottonea.html");
+    $paginaeventi = file_get_contents("../HTML/eventi.html");
+    $paginahome = file_get_contents("../HTML/home.html");
+    $padova = file_get_contents("../HTML/padova.html");
+    $vicenza = file_get_contents("../HTML/vicenza.html");
+    $verona = file_get_contents("../HTML/verona.html");
+    $venezia = file_get_contents("../HTML/venezia.html");
+    $footer = file_get_contents("../HTML/footer.html");
 
     if(isset($_GET['errore'])){
 
         if($_GET['errore'] < 5){
 
-         $page = file_get_contents("main.html");
+         $page = file_get_contents("../HTML/registrazione.html");
          echo $page;
 
          echo "<p class='box_errore'>";
@@ -48,7 +48,7 @@
         }
         else{
 
-            $page = file_get_contents("accesso.html");
+            $page = file_get_contents("../HTML/accesso.html");
             echo $page;
             echo "<p class='box_errore'>";
             echo "La password o e-mail digitate sono sbagliate";
