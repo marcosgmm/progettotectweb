@@ -1,0 +1,15 @@
+
+.prova button {
+    width: 23em;
+    padding: .5em;
+    color: black;
+    text-shadow: 1px 1px 1px #000;
+    border: solid thin black;
+    -webkit-border-radius: .7em;
+    -moz-border-radius: .7em;
+    -webkit-box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 2px #bbb;
+    background-color: 00C0FF;
+    background-image: -webkit-gradient(linear, left top, left bottom,from(FFFFFF), to(00C0FF),color-stop(0.4, 00C0FF));
+}
+
