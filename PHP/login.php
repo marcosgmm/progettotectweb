@@ -27,7 +27,7 @@
             exit;
         } else{
             mysqli_close($conn);
-      		header("Location: capo.php?errore=5");
+      		header("Location: capoHome.php?errore=5");
         }
 
 ?>

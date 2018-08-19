@@ -49,7 +49,7 @@
     		}
     		else{
     			mysqli_close($conn);
-      			header("Location: main.html?errore=3"); //inserimento fallito
+      			header("Location: capoHome?errore=3"); //inserimento fallito
     		}
 
     		exit;
