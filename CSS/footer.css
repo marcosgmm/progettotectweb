@@ -2,14 +2,14 @@
       .Main
     {
         position: relative;
-        min-height: 75px;
+        min-height: 30%;
 
     }
 
 
     #Footer
     {
-        background-color: #99CBFF;
+        background-color: #00ace6;
         color: white;
         position: absolute;
         width: 100%;
@@ -17,5 +17,32 @@
 
     }
 
+
+.left{
+float: left;
+width: 33%;
+margin-left: 0px;
+padding: 10px;
+}
+
+.centered{
+margin-left: 33%;
+width: 33%;
+padding: 10px;
+}
+
+.right {
+    float: right;
+    margin-right: 0px;
+    text-align: center;
+    width: 30%;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.right img {
+    width: 6%;
+    margin-left: 10px;
+}
 
 
