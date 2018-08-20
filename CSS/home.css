@@ -1,4 +1,4 @@
-foto {
+.foto {
 /* Box che racchiude la galleria di foto*/
 padding : 0px;
 margin-top : 5px;
@@ -14,3 +14,4 @@ margin : 5px;
 background-repeat : no-repeat;
 background-position : center;
 }
+

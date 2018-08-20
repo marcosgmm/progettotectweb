@@ -2,7 +2,7 @@
       .Main
     {
         position: relative;
-        min-height: 75px;
+        min-height: 30%;
 
     }
 
@@ -19,16 +19,30 @@
 
 
 .left{
-text-align:left;
-float:left;
+float: left;
+width: 33%;
+margin-left: 0px;
+padding: 10px;
 }
-.right{
-float:right;
-text-align:right;
-}
-.centered{
-margin-left: 25%;
 
+.centered{
+margin-left: 33%;
+width: 33%;
+padding: 10px;
+}
+
+.right {
+    float: right;
+    margin-right: 0px;
+    text-align: center;
+    width: 30%;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.right img {
+    width: 6%;
+    margin-left: 10px;
 }
 
 
