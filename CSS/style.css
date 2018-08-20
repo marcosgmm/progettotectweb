@@ -70,6 +70,11 @@ form, .content{
    color: green;
    font-weight: bold;
    text-align: center;
-   margin: 10px
+   margin: 10px;
+   border-style: solid;
+   border-color: green;
+   width: 20%;
+   margin: 10px auto 0px;
+
 }
 

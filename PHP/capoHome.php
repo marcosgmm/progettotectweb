@@ -13,7 +13,7 @@
     $verona = file_get_contents("../HTML/verona.html");
     $venezia = file_get_contents("../HTML/venezia.html");
     $footer = file_get_contents("../HTML/footer.html");
-
+\
 
     if(isset($_GET['nome'])){
 
