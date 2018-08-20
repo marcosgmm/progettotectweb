@@ -59,9 +59,16 @@ form, .content{
     text-align: center;
 }
 
-.box_errore{
+.errore{
    color: red;
    font-weight: bold;
    text-align: center;
-    margin: 10px;
+   margin: 10px;
+}
+
+.successo{
+   color: green;
+   font-weight: bold;
+   text-align: center;
+   margin: 10px;
 }
