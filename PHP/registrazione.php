@@ -55,14 +55,14 @@
                 mysqli_close($conn);
 				$pagina = file_get_contents("../HTML/registrazione.html");
                 echo $pagina;
-                echo "<div class ='successo'>Registrazione effettuata!</div>";
+                echo "<div class='box_errore'>Registrazione effettuata!</div>";
                 exit;
     		}
     		else{
     			mysqli_close($conn);
       			$pagina = file_get_contents("../HTML/registrazione.html");
                 echo $pagina;
-                echo "<div class='errore'>Errore: registrazione fallita!</div>";
+                echo "<div class='box_errore'>Errore: registrazione fallita!</div>";
     		}
 
     		exit;
