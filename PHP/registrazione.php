@@ -53,13 +53,16 @@
                 $Name = $Aux->fetch_assoc();
                 $idUtente = $Name['id'];
                 mysqli_close($conn);
-				header("Location: capoHome.php?nome=$idUtente");
+				$pagina = file_get_contents("../HTML/registrazione.html");
+                echo $pagina;
+                echo "<div class ='successo'>Registrazione effettuata!</div>";
+                exit;
     		}
     		else{
     			mysqli_close($conn);
       			$pagina = file_get_contents("../HTML/registrazione.html");
                 echo $pagina;
-                echo "<div class='box_errore'>Errore: registrazione fallita!</div>";
+                echo "<div class='errore'>Errore: registrazione fallita!</div>";
     		}
 
     		exit;
