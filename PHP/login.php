@@ -38,7 +38,6 @@
             echo $pagina;
             echo "<div class='box_errore'>Password o e-mail digitate sono sbagliate!</div>";
 
-      		//header("Location: capoHome.php?errore=5");
         }
 
 ?>
