@@ -9,7 +9,7 @@
 
     #Footer
     {
-        background-color: #99CBFF;
+        background-color: #00ace6;
         color: white;
         position: absolute;
         width: 100%;
@@ -17,5 +17,18 @@
 
     }
 
+
+.left{
+text-align:left;
+float:left;
+}
+.right{
+float:right;
+text-align:right;
+}
+.centered{
+margin-left: 25%;
+
+}
 
 
