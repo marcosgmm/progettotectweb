@@ -2,6 +2,13 @@
         $email = $_POST['Email'];
 		$psw = $_POST['Password'];
 
+        if($email == "" || $psw == ""){
+            $pagina = file_get_contents("../HTML/accesso.html");
+            echo $pagina;
+            echo "<div class='box_errore'>Tutti i campi devono essere compilati per accedere!</div>";
+            exit;
+        }
+
 		$conn = new mysqli("localhost","root","", "prova");
 
 		$comandoSQL = "select psw from utenti where email ='" . $email ."'";
@@ -27,7 +34,10 @@
             exit;
         } else{
             mysqli_close($conn);
-      		header("Location: capoHome.php?errore=5");
+            $pagina = file_get_contents("../HTML/accesso.html");
+            echo $pagina;
+            echo "<div class='box_errore'>Password o e-mail digitate sono sbagliate!</div>";
+
         }
 
 ?>

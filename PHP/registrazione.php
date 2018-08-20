@@ -9,17 +9,23 @@
         $Cognome = $_POST['Cognome'];
 
         if($email == '' || $Nome == '' || $Cognome == '' || $psw == '' || $psw2 == ''){
-            header("Location: capoHome.php?errore=1"); //non sono stati compilati dei campi
+            $pagina = file_get_contents("../HTML/registrazione.html");
+            echo $pagina;
+            echo "<div class='box_errore'>Errore: e' obbligatorio compilare tutti i campi!</div>";
             exit;
         }
 
         if(strlen($psw)<8){
-            header("Location: capoHome.php?errore=4"); //lunghezza della password troppo corta
+            $pagina = file_get_contents("../HTML/registrazione.html");
+            echo $pagina;
+            echo "<div class='box_errore'>La lunghezza della password deve essere minimo di 8 caratteri!</div>";
             exit;
         }
 
         if($psw != $psw2){
-            header("Location: capoHome.php?errore=2"); //password digitate non sono uguali
+            $pagina = file_get_contents("../HTML/registrazione.html");
+            echo $pagina;
+            echo "<div class='box_errore'>Errore: le password digitate non corrispondono!</div>";
             exit;
         }
         else{
@@ -31,8 +37,10 @@
 		$risultatoAccesso = $conn->query($comandoSQL);
 
 			if ($risultatoAccesso->fetch_assoc()) {
-				header("Location: capoHome.php?errore=3"); //la email è già utilizzata
-				exit;
+				$pagina = file_get_contents("../HTML/registrazione.html");
+                echo $pagina;
+                echo "<div class='box_errore'>Errore: la e-mail inserita e' già stata utlizzata!</div>";
+                exit;
 			}
 
 			$comandoSQL = "insert into utenti values ( null ,'". $email ."','" . $psw ."','" . $Nome . "','" . $Cognome . "')";
@@ -49,7 +57,9 @@
     		}
     		else{
     			mysqli_close($conn);
-      			header("Location: capoHome?errore=3"); //inserimento fallito
+      			$pagina = file_get_contents("../HTML/registrazione.html");
+                echo $pagina;
+                echo "<div class='box_errore'>Errore: registrazione fallita!</div>";
     		}
 
     		exit;
