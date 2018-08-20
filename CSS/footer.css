@@ -1,15 +1,13 @@
-
-      .Main
+    .Main
     {
         position: relative;
         min-height: 40%;
-
     }
 
 
     #Footer
     {
-        background-color: #00ace6;
+        background-color: dodgerblue;
         color: white;
         position: absolute;
         width: 100%;

@@ -2,17 +2,18 @@
 
     session_start();
 
-    $page = file_get_contents("../HTML/NavigationBarUp.html");
+    $pageHome = file_get_contents("../HTML/Home.html");
+    $nav1 = file_get_contents("../HTML/NavigationBarUp.html");
     $nav2 = file_get_contents("../HTML/NavigationBarDown.html");
-    $Home = file_get_contents("../HTML/home.html");
-    $ba =file_get_contents("../HTML/bottonea.html");
+    $bottoniNav1 =file_get_contents("../HTML/bottonea.html");
+    $footer = file_get_contents("../HTML/footer.html");
+
     $paginaeventi = file_get_contents("../HTML/eventi.html");
     $paginahome = file_get_contents("../HTML/home.html");
     $padova = file_get_contents("../HTML/padova.html");
     $vicenza = file_get_contents("../HTML/vicenza.html");
     $verona = file_get_contents("../HTML/verona.html");
     $venezia = file_get_contents("../HTML/venezia.html");
-    $footer = file_get_contents("../HTML/footer.html");
 
 
     if(isset($_GET['nome'])){
@@ -38,11 +39,11 @@
            if(isset($_GET['pagina'])){
 
                 if($_GET['pagina'] == 'padova'){
-                    $page = str_replace('$ACCEDI$', $ba, $page);
-                    $page = str_replace('$UTENTE$', "", $page);
-                    $page = str_replace('$DOWN$', $nav2, $page);
-                    $page = str_replace('$PAGINA$', $padova, $page);
-                    $page = str_replace('$FOOTER$', $footer, $page);
+                    $page = str_replace('$ACCEDI$', $ba, $pageHome);
+                    $page = str_replace('$UTENTE$', "", $pageHome);
+                    $page = str_replace('$DOWN$', $nav2, $pageHome);
+                    $page = str_replace('$PAGINA$', $padova, $pageHome);
+                    $page = str_replace('$FOOTER$', $footer, $pageHome);
                     echo $page;                                       }
 
                 if($_GET['pagina'] == 'vicenza'){
@@ -71,13 +72,13 @@
                     echo $page;                                       }
                 }
          else{
-                $page = str_replace('$ACCEDI$', $ba, $page);
-                $page = str_replace('$UTENTE$', "", $page);
-                $page = str_replace('$DOWN$', $Home, $page);
-                $page = str_replace('$FOOTER$', $footer, $page);
+                $pageHome = str_replace('$HEADER$', $nav1, $pageHome);
+                $pageHome = str_replace('$DOWN$', "", $pageHome);
+                $pageHome = str_replace('$ACCEDI$', $bottoniNav1, $pageHome);
+                $pageHome = str_replace('$UTENTE$', "", $pageHome);
+                $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
 
-
-                echo $page;
+                echo $pageHome;
          }
   }
 
