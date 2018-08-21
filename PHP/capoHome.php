@@ -51,29 +51,37 @@
                     exit;                                           }
 
                 if($_GET['pagina'] == 'vicenza'){
-                    $page = str_replace('$ACCEDI$', $ba, $page);
-                    $page = str_replace('$UTENTE$', "", $page);
-                    $page = str_replace('$DOWN$', $nav2, $page);
-                    $page = str_replace('$PAGINA$', $vicenza, $page);
-                    $page = str_replace('$FOOTER$', $footer, $page);
-                    echo $page;                                       }
+                   $pageHome = str_replace('$HEADER$', $nav1, $pageHome);
+                   $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
+                   $pageHome = str_replace('$ACCEDI$', $bottoniNav1, $pageHome);
+                   $pageHome = str_replace('$UTENTE$', "", $pageHome);
+                   $pageHome = str_replace('$PAGINA$', $vicenza, $pageHome);
+                   $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
+                   $pageHome = str_replace('$CITTA$', "vicenza", $pageHome);
+                    echo $pageHome;
+                    exit;                                         }
 
                 if($_GET['pagina'] == 'verona'){
-                    $page = str_replace('$ACCEDI$', $ba, $page);
-                    $page = str_replace('$UTENTE$', "", $page);
-                    $page = str_replace('$DOWN$', $nav2, $page);
-                    $page = str_replace('$PAGINA$', $verona, $page);
-                    $page = str_replace('$FOOTER$', $footer, $page);
-                    echo $page;                                       }
+                   $pageHome = str_replace('$HEADER$', $nav1, $pageHome);
+                   $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
+                   $pageHome = str_replace('$ACCEDI$', $bottoniNav1, $pageHome);
+                   $pageHome = str_replace('$UTENTE$', "", $pageHome);
+                   $pageHome = str_replace('$PAGINA$', $verona, $pageHome);
+                   $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
+                   $pageHome = str_replace('$CITTA$', "verona", $pageHome);
+                    echo $pageHome;
+                    exit;                                         }
 
                  if($_GET['pagina'] == 'venezia'){
-                    $page = str_replace('$ACCEDI$', $ba, $page);
-                    $page = str_replace('$UTENTE$', "", $page);
-                    $page = str_replace('$DOWN$', $nav2, $page);
-                    $page = str_replace('$PAGINA$', $venezia, $page);
-                    $page = str_replace('$FOOTER$', $footer, $page);
-
-                    echo $page;                                       }
+                   $pageHome = str_replace('$HEADER$', $nav1, $pageHome);
+                   $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
+                   $pageHome = str_replace('$ACCEDI$', $bottoniNav1, $pageHome);
+                   $pageHome = str_replace('$UTENTE$', "", $pageHome);
+                   $pageHome = str_replace('$PAGINA$', $venezia, $pageHome);
+                   $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
+                   $pageHome = str_replace('$CITTA$', "venezia", $pageHome);
+                    echo $pageHome;
+                    exit;                                         }
                 }
          else{
                 $pageHome = str_replace('$HEADER$', $nav1, $pageHome);
