@@ -3,6 +3,7 @@
     session_start();
 
     $pageHome = file_get_contents("../HTML/Home.html");
+    $Home = file_get_contents("../HTML/paginaHomeSito.html");
     $nav1 = file_get_contents("../HTML/NavigationBarUp.html");
     $nav2 = file_get_contents("../HTML/NavigationBarDown.html");
     $bottoniNav1 =file_get_contents("../HTML/bottonea.html");
@@ -39,12 +40,15 @@
            if(isset($_GET['pagina'])){
 
                 if($_GET['pagina'] == 'padova'){
-                    $page = str_replace('$ACCEDI$', $ba, $pageHome);
-                    $page = str_replace('$UTENTE$', "", $pageHome);
-                    $page = str_replace('$DOWN$', $nav2, $pageHome);
-                    $page = str_replace('$PAGINA$', $padova, $pageHome);
-                    $page = str_replace('$FOOTER$', $footer, $pageHome);
-                    echo $page;                                       }
+                   $pageHome = str_replace('$HEADER$', $nav1, $pageHome);
+                   $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
+                   $pageHome = str_replace('$ACCEDI$', $bottoniNav1, $pageHome);
+                   $pageHome = str_replace('$UTENTE$', "", $pageHome);
+                   $pageHome = str_replace('$PAGINA$', $padova, $pageHome);
+                   $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
+                   $pageHome = str_replace('$CITTA$', "padova", $pageHome);
+                    echo $pageHome;
+                    exit;                                           }
 
                 if($_GET['pagina'] == 'vicenza'){
                     $page = str_replace('$ACCEDI$', $ba, $page);
@@ -76,6 +80,7 @@
                 $pageHome = str_replace('$DOWN$', "", $pageHome);
                 $pageHome = str_replace('$ACCEDI$', $bottoniNav1, $pageHome);
                 $pageHome = str_replace('$UTENTE$', "", $pageHome);
+                $pageHome = str_replace('$PAGINA$', $Home, $pageHome);
                 $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
 
                 echo $pageHome;
