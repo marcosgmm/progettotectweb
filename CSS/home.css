@@ -1,18 +1,13 @@
 .foto {
 /* Box che racchiude la galleria di foto*/
-padding : 0px;
-margin-top : 5px;
+margin-top : 30px;
 width : 100%;
 }
 
 .foto img {
 /* Anchor dove è collegata la foto*/
 width : 18%;
-padding : 0px;
-margin : 5px;
-background-repeat : no-repeat;
-background-position : center;
 margin-left: 5.6%;
-margin-top: 30px;
+
 }
 
