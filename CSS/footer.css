@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+}
+
+
     .Main
     {
         position: relative;
@@ -16,27 +21,42 @@
 
 .sinistra {
     float: left;
-    padding: 10px;
-    width: 25%;
+    width: 33%;
     text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-left: 10px;
 }
 
 .sinistra img {
-    width: 9%;
+    width: 35px;
     margin-left: 1.5%;
-    margin-top: 2%;
+    margin-top: 5px;
 }
 
 .destra {
     float: right;
-    padding: 10px;
-    width: 33%;
+    width: 27%;
+    line-height: 1.6;
+    font-size: 1.2em;
+    padding-bottom: 10px;
 }
 
 .centro {
-    padding: 10px;
-    margin-left: 33%;
-    width: 33%;
+    padding: 5px;
+    margin-left: 34%;
+    width: 31%;
+    text-align: center;
 }
+
+hr {
+    margin-right: 4%;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    height: 1px;
+    background-color: white;
+}
+
+
 
 
