@@ -1,7 +1,9 @@
-
 .prova button {
-    width: 23em;
-    padding: .5em;
+    width: 15%;
+    height: 30px;
+    padding: center;
+    margin-left: 8%;
+    margin-top: 20px;
     color: black;
     text-shadow: 1px 1px 1px #000;
     border: solid thin black;
@@ -11,5 +13,6 @@
     box-shadow: 2px 2px 2px #bbb;
     background-color: 00C0FF;
     background-image: -webkit-gradient(linear, left top, left bottom,from(FFFFFF), to(00C0FF),color-stop(0.4, 00C0FF));
+
 }
 
