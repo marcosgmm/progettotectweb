@@ -2,7 +2,7 @@
 
     session_start();
 
-    $pageHome = file_get_contents("../HTML/Home.html");
+    $pageHome = file_get_contents("../HTML/home.html");
     $Home = file_get_contents("../HTML/paginaHomeSito.html");
     $nav1 = file_get_contents("../HTML/NavigationBarUp.html");
     $nav2 = file_get_contents("../HTML/NavigationBarDown.html");
