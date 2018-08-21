@@ -35,14 +35,26 @@
          $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
 
          echo $pageHome;
-        exit;
+         exit;
     }
      else{
                 $pageHome = str_replace('$HEADER$', $nav1, $pageHome);
-                $pageHome = str_replace('$DOWN$', "", $pageHome);
                 $pageHome = str_replace('$ACCEDI$', $bottoniNav1, $pageHome);
                 $pageHome = str_replace('$UTENTE$', "", $pageHome);
-                $pageHome = str_replace('$PAGINA$', $Home, $pageHome);
+
+                if(isset($_GET['pagina'])){
+
+                    $pag = $_GET['pagina'];
+                    $citta = file_get_contents("../HTML/$pag.html");
+                    $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
+                    $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
+                    $pageHome = str_replace('$CITTA$', $pag, $pageHome);  }
+
+                else{
+                        $pageHome = str_replace('$DOWN$', "", $pageHome);
+                        $pageHome = str_replace('$PAGINA$', $Home, $pageHome); }
+
+
                 $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
 
                 echo $pageHome;
