@@ -28,11 +28,14 @@
         $NomeUtente = strtoupper($NomeUtente);
         mysqli_close($conn);
 
-        $page = str_replace('$UTENTE$', $NomeUtente, $page);
-        $page = str_replace('$ACCEDI$', "", $page);
-        $page = str_replace('$DOWN$', $Home, $page);
+         $pageHome = str_replace('$HEADER$', $nav1, $pageHome);
+         $pageHome = str_replace('$DOWN$', "", $pageHome);
+         $pageHome = str_replace('$ACCEDI$', "", $pageHome);
+         $pageHome = str_replace('$UTENTE$', $NomeUtente, $pageHome);
+         $pageHome = str_replace('$PAGINA$', $Home, $pageHome);
+         $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
 
-        echo $page;
+         echo $pageHome;
         exit;
     }
      else{
