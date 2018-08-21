@@ -24,12 +24,16 @@
         }
 
         if ($autenticato){
-            $ComandoSQLperaccesso = "select id from utenti where email ='" . $email ."'";
+            $ComandoSQLperaccesso = "select nome from utenti where email ='" . $email ."'";
             $Aux = $conn->query($ComandoSQLperaccesso);
             $Name = $Aux->fetch_assoc();
-            $idUtente = $Name['id'];
+            $nomeUtente = $Name['nome'];
             mysqli_close($conn);
-            header("Location: capoHome.php?nome=$idUtente");
+
+            session_start();
+            $_SESSION['name'] = $nomeUtente;
+
+            header("Location: capoHome.php");
 
             exit;
         } else{
