@@ -72,6 +72,10 @@ form, .content{
     text-align: center;
 }
 
+.btn:hover {
+    background-color: dodgerblue;
+}
+
 .box_errore{
    color: red;
    font-weight: bold;
