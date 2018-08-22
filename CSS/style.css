@@ -86,6 +86,19 @@ body{
     font-weight: bold;
 }
 
+.logout button {
+    background-color: #B0C4DE;
+    border: solid thin black;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 10px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+    background-color: #ff4d4d;
+    font-weight: bold;
+}
+
 .btn{
     padding: 10px;
     font-size: 25px;
