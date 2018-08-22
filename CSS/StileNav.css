@@ -21,7 +21,6 @@ body {
     border-style: solid;
     background-color: white;
     border-color: black;
-    padding-top: center;
 }
 
 .upnav input[type=text] {
@@ -35,6 +34,7 @@ body {
     border-bottom-left-radius: 25px;
     border-style: solid;
     border-color: black;
+    text-align: left;
 }
 
 .parteDestra a {
@@ -48,7 +48,6 @@ body {
   border-bottom: 3px solid transparent;
 
 }
-
 
 
 .logo {
