@@ -33,6 +33,7 @@
             session_start();
             $_SESSION['name'] = $nomeUtente;
             $_SESSION['email'] = $email;
+            $_SESSION['password'] = $psw;
 
             header("Location: capoHome.php");
 
