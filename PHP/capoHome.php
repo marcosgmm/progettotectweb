@@ -22,15 +22,26 @@
          $pageHome = str_replace('$ACCEDI$', "", $pageHome);
          $pageHome = str_replace('$UTENTE$', $NomeUtente, $pageHome);
 
-         if(isset($_GET['pagina'])){
+         if(isset($_GET['pagina']))     {
              $pag = $_GET['pagina'];
+             $_SESSION['PROVA'] = $pag;
              $citta = file_get_contents("../HTML/$pag.html");
              $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
              $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
-             $pageHome = str_replace('$CITTA$', $pag, $pageHome);
-         } else{
+             $pageHome = str_replace('$CITTA$', $pag, $pageHome);            }
+
+        else if(isset($_GET['sez']))       {
+                $pag = $_SESSION['PROVA'];
+                $sezione = $_GET['sez'];
+                $citta = file_get_contents("../HTML/$sezione.html");
+                $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
+                $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
+                $pageHome = str_replace('$CITTA$', $pag, $pageHome);       }
+
+             else{
                     $pageHome = str_replace('$DOWN$', "", $pageHome);
-                    $pageHome = str_replace('$PAGINA$', $Home, $pageHome); }
+                    $pageHome = str_replace('$PAGINA$', $Home, $pageHome);
+                 }
 
          $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
 
@@ -42,17 +53,26 @@
                 $pageHome = str_replace('$ACCEDI$', $bottoniNav1, $pageHome);
                 $pageHome = str_replace('$UTENTE$', "", $pageHome);
 
-                if(isset($_GET['pagina'])){
+                if(isset($_GET['pagina']))     {
+                        $pag = $_GET['pagina'];
+                        $_SESSION['PROVA'] = $pag;
+                        $citta = file_get_contents("../HTML/$pag.html");
+                        $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
+                        $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
+                        $pageHome = str_replace('$CITTA$', $pag, $pageHome);            }
 
-                    $pag = $_GET['pagina'];
-                    $citta = file_get_contents("../HTML/$pag.html");
-                    $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
-                    $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
-                    $pageHome = str_replace('$CITTA$', $pag, $pageHome);  }
+                else if(isset($_GET['sez']))       {
+                        $pag = $_SESSION['PROVA'];
+                        $sezione = $_GET['sez'];
+                        $citta = file_get_contents("../HTML/$sezione.html");
+                        $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
+                        $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
+                        $pageHome = str_replace('$CITTA$', $pag, $pageHome);       }
 
-                else{
-                        $pageHome = str_replace('$DOWN$', "", $pageHome);
-                        $pageHome = str_replace('$PAGINA$', $Home, $pageHome); }
+                     else{
+                            $pageHome = str_replace('$DOWN$', "", $pageHome);
+                            $pageHome = str_replace('$PAGINA$', $Home, $pageHome);
+                         }
 
 
                 $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
