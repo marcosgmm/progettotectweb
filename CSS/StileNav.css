@@ -37,7 +37,7 @@ body {
     border-color: black;
 }
 
-.upnav a{
+.parteDestra a {
   float: right;
   display: block;
   color: black;
@@ -49,11 +49,13 @@ body {
 
 }
 
-.upnav a img {
+
+
+.logo {
     float: left;
     margin-left: 2%;
-    width: 15%;
-    padding: center;
+    height: 40px;
+    width: auto;
 }
 
 .topnav {
