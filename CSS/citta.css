@@ -3,12 +3,14 @@
     height: 30px;
     padding: center;
     margin-top: 20px;
+    margin-left: 8%;
     color: black;
     border: solid thin black;
     -webkit-border-radius: .7em;
     -moz-border-radius: .7em;
     background-color: #00C0FF;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(FFFFFF), to(00C0FF), color-stop(0.4, 00C0FF));
+    float: left;
+
 }
 
 .prova button:hover {
