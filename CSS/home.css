@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 .foto {
 /* Box che racchiude la galleria di foto*/
 margin-top : 30px;
@@ -11,3 +15,9 @@ margin-left: 5.6%;
 float: left;
 }
 
+.contenutoHomePage {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}

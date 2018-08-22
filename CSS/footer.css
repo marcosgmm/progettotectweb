@@ -3,20 +3,18 @@
 }
 
 
-    .Main
-    {
-        position: relative;
-        min-height: 40%;
-    }
+
 
 
     #Footer
     {
+        float: left;
         background-color: dodgerblue;
         color: white;
-        position: absolute;
         width: 100%;
+        height: 30%;
         bottom: 0px;
+        margin-top: 30px;
     }
 
 .sinistra {

@@ -6,12 +6,9 @@ body {
   overflow: hidden;
   background-color: #99CBFF;
   position: sticky;
-  width: 100%
+  width: 100%;
 }
 
-.upnav img{
-    float: left;
-}
 
 .upnav button {
     float: right;
@@ -24,7 +21,7 @@ body {
     border-style: solid;
     background-color: white;
     border-color: black;
-
+    padding-top: center;
 }
 
 .upnav input[type=text] {
@@ -50,6 +47,13 @@ body {
   font-size: 17px;
   border-bottom: 3px solid transparent;
 
+}
+
+.upnav img {
+    float: left;
+    margin-left: 2%;
+    width: 15%;
+    padding: center;
 }
 
 .topnav {
