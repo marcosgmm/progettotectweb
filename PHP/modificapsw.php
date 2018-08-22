@@ -3,16 +3,13 @@
         session_start();
 
         $email = $_SESSION['email'];
+        $psw = $_SESSION['password'];
 
         $vecchiaPsw = $_POST['Vecchiapsw'];
         $nuovaPsw = $_POST['Nuovapsw'];
         $nuovaPsw2 = $_POST['Nuovapsw2'];
 
         $conn = new mysqli("localhost","root","", "prova");
-        $comandoSQL = "select psw from utenti where email ='" . $email."'";
-        $risultatoAccesso = $conn -> query($comandoSQL);
-        $row = $risultatoAccesso -> fetch_assoc();
-        $psw = $row['psw'];
 
        if($psw != $vecchiaPsw){
             mysqli_close($conn);
