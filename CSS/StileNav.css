@@ -49,7 +49,7 @@ body {
 
 }
 
-.upnav img {
+.upnav a img {
     float: left;
     margin-left: 2%;
     width: 15%;
