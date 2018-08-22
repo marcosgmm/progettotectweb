@@ -10,9 +10,6 @@
     $bottoniNav1 =file_get_contents("../HTML/bottonea.html");
     $footer = file_get_contents("../HTML/footer.html");
 
-    $paginaeventi = file_get_contents("../HTML/eventi.html");
-    $paginahome = file_get_contents("../HTML/home.html");
-
 
     if (isset($_SESSION['name'])){
 
