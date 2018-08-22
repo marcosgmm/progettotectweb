@@ -24,16 +24,23 @@
         }
 
         if ($autenticato){
+
             $ComandoSQLperaccesso = "select nome from utenti where email ='" . $email ."'";
             $Aux = $conn->query($ComandoSQLperaccesso);
             $Name = $Aux->fetch_assoc();
             $nomeUtente = $Name['nome'];
+
+            $ComandoSQLperaccesso = "select cognome from utenti where email ='" . $email ."'";
+            $Aux = $conn->query($ComandoSQLperaccesso);
+            $Name = $Aux->fetch_assoc();
+            $cognomeUtente = $Name['cognome'];
             mysqli_close($conn);
 
             session_start();
             $_SESSION['name'] = $nomeUtente;
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $psw;
+            $_SESSION['cognome'] = $cognomeUtente;
 
             header("Location: capoHome.php");
 
