@@ -32,6 +32,7 @@
 
             session_start();
             $_SESSION['name'] = $nomeUtente;
+            $_SESSION['email'] = $email;
 
             header("Location: capoHome.php");
 
