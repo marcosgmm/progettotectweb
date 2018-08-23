@@ -28,8 +28,9 @@
             $articolo = str_replace('$URL$', $img, $articolo);
             $articolo = str_replace('$ALT$', $alt, $articolo);
             echo $articolo;
+            $articolo = file_get_contents("../HTML/boxArticolo.html");
             $id = $id + 1;
-            $SQL2 = "select * from ". $citta ." where sezione ='" . $sezione ."'AND id = '". $id ."'";
+            $SQL2 = "select * from ". $citta ." where sezione ='" . $sezione ."' AND id = '". $id ."'";
             $RIS = $conn -> query($SQL2);
         }
 
