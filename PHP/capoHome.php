@@ -22,7 +22,7 @@
          if(isset($_GET['pagina']))     {
 
                         $pag = $_GET['pagina'];
-                        $_SESSION['PROVA'] = $pag;
+                        $_SESSION['PAGINA'] = $pag;
                         $citta = file_get_contents("../HTML/$pag.html");
                         $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
                         $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
@@ -33,7 +33,7 @@
                          }
 
                 else { if(isset($_GET['sez']))       {
-                            $pag = $_SESSION['PROVA'];
+                            $pag = $_SESSION['PAGINA'];
                             $sezione = $_GET['sez'];
                             $_SESSION['SEZIONE'] = $sezione;
 
@@ -64,7 +64,7 @@
                 if(isset($_GET['pagina']))     {
 
                         $pag = $_GET['pagina'];
-                        $_SESSION['PROVA'] = $pag;
+                        $_SESSION['PAGINA'] = $pag;
                         $citta = file_get_contents("../HTML/$pag.html");
                         $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
                         $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
@@ -75,7 +75,7 @@
                          }
 
                 else { if(isset($_GET['sez']))       {
-                            $pag = $_SESSION['PROVA'];
+                            $pag = $_SESSION['PAGINA'];
                             $sezione = $_GET['sez'];
                             $_SESSION['SEZIONE'] = $sezione;
 
