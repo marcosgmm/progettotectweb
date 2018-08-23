@@ -1,20 +1,14 @@
-p.riquadro{border-style: solid;}
-
-  /* bottone da cliccare per leggere di più (parola Calda) */
-
-.sidebar-box {
-  max-height: 120px;
-  position: relative;
-  overflow: hidden;
+* {
+    margin: 0;
 }
-.sidebar-box .leggi-di-piu {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  margin: 0; padding: 30px 0;
 
+.conteinTitolo {
+    float: left;
+    width: 100%;
+    height: auto;
+    background: aqua;
+}
 
-  background-image: linear-gradient(to bottom, transparent, black);
+.titolo {
+    padding: 5px;
 }
