@@ -46,3 +46,7 @@
     text-align: left;
     padding-left: 30%;
 }
+
+#more {
+    display: none;
+}
