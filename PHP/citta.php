@@ -4,7 +4,7 @@
 
         $titolo = $_SESSION['PAGINA'];
 
-        $immagine = "..IMG/".$titolo."/".$titolo."Home.jpg";
+        $immagine = "../IMG/".$titolo."/".$titolo."Home.jpg";
 
         $alt = "foto di ".$titolo;
 
