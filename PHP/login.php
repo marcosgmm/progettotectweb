@@ -1,4 +1,13 @@
 <?php
+        mysqli_report(MYSQLI_REPORT_STRICT);
+
+        try {
+                $connection = new mysqli("localhost","root","", "prova") ;
+                } catch (Exception $e ) {
+                    echo "<h2> Database momentaneamente non disponibile :( <h2>";
+                    exit;
+                }
+
         $email = $_POST['Email'];
 		$psw = $_POST['Password'];
 

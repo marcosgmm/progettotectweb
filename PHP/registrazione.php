@@ -2,6 +2,15 @@
 
 		//ok la pagina è stata davvero richiamata dalla form
 
+         mysqli_report(MYSQLI_REPORT_STRICT);
+
+        try {
+                $connection = new mysqli("localhost","root","", "prova") ;
+                } catch (Exception $e ) {
+                    echo "<h2> Database momentaneamente non disponibile :( <h2>";
+                    exit;
+                }
+
 		$email = $_POST['Email']; //recupero il contenuto della casella email
 		$psw = $_POST['Password']; //recupero il contenuto della casella password
         $psw2 = $_POST['Password2'];
