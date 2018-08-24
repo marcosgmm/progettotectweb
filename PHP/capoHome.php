@@ -25,7 +25,6 @@
                 $pageHome = str_replace('$UTENTE$', "", $pageHome);
     }
 
-
          if(isset($_GET['pagina']))     {
 
                         $pag = $_GET['pagina'];

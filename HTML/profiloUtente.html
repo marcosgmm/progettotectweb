@@ -24,20 +24,22 @@
     <form class="insertdata" method="POST" action="../PHP/modificapsw.php">
         <div class="input-group">
             <label>Vecchia Password:</label>
-            <input type="password" name="Vecchiapsw">
+            <input type="text" name="Vecchiapsw">
         </div>
         <div class="input-group">
             <label>Nuova password:</label>
-            <input type="password" name="Nuovapsw">
+            <input type="text" name="Nuovapsw">
         </div>
         <div class="input-group">
             <label>Conferma nuova password:</label>
-            <input type="password" name="Nuovapsw2">
+            <input type="text" name="Nuovapsw2">
         </div>
         <div class="input-group"><br>
             <input type="submit" class="btn" name="CAMBIAPSW" value="MODIFICA">
         </div>
     </form>
+
+    <div class='box_errore'>$MESSAGGIO$</div>
 
     <form action="../PHP/logout.php">
         <div class="logout"><br>

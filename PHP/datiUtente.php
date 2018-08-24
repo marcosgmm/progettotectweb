@@ -11,6 +11,7 @@
       $profilo = str_replace('$EMAIL$', $Email, $profilo);
       $profilo = str_replace('$NOME$', $NomeUtente, $profilo);
       $profilo = str_replace('$COGNOME$', $Cognome, $profilo);
+      $profilo = str_replace('$MESSAGGIO$', "", $profilo);
 
     echo $profilo;
 
