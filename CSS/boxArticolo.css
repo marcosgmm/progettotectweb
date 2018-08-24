@@ -1,12 +1,15 @@
 .boxTitolo {
     float: left;
-    width: 100%;
+    width: 96%;
     border: 1.5px solid black;
     height: auto;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .titoloArticolo {
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
     font-weight: bold;
     text-align: left;
@@ -23,27 +26,25 @@
 }
 
 .boxImmagineTesto {
-    float: left;
-    width: 100%;
+    width: 96%;
     height: auto;
     border: 1.5px solid black;
     margin-top: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
     text-align: center;
     margin-bottom: 20px;
+    overflow: auto;
 }
 
-.immagineArticolo img {
+.immagineTesto p {
+    text-align: left;
+    padding: 20px;
+}
+
+.immagineTesto img {
     float: left;
     width: 15em;
-    padding: 5px;
+    padding: 20px;
 }
 
-.testoArticolo {
-    padding-top: 5px;
-    text-align: left;
-    padding-left: 30%;
-}
-
-#more {
-    display: none;
-}
