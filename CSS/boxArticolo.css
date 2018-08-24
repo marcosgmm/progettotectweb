@@ -1,12 +1,15 @@
 .boxTitolo {
     float: left;
-    width: 100%;
+    width: 96%;
     border: 1.5px solid black;
     height: auto;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .titoloArticolo {
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
     font-weight: bold;
     text-align: left;
@@ -23,12 +26,15 @@
 }
 
 .boxImmagineTesto {
-    width: 100%;
+    width: 96%;
     height: auto;
     border: 1.5px solid black;
     margin-top: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
     text-align: center;
     margin-bottom: 20px;
+    overflow: auto;
 }
 
 .immagineTesto p {
@@ -39,6 +45,6 @@
 .immagineTesto img {
     float: left;
     width: 15em;
-    padding: 10px;
+    padding: 20px;
 }
 
