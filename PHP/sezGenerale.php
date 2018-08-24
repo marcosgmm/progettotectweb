@@ -26,11 +26,13 @@
             $titolo = $riga['titolo'];
             $testo =  $riga['testo'];
             $img = $riga['img'];
-            $data = $riga['data'];
+            $dataI = $riga['data_inizio'];
+            $dataF = $riga['data_fine'];
             $alt = $riga['alt'];
             $id = $riga['id'];
             $articolo = str_replace('$TITOLO$', $titolo, $articolo);
-            $articolo = str_replace('$DATA$', $data, $articolo);
+            $articolo = str_replace('$DATAI$', $dataI, $articolo);
+            $articolo = str_replace('$DATAF$', $dataF, $articolo);
             $articolo = str_replace('$TESTO$', $testo, $articolo);
             $articolo = str_replace('$URL$', $img, $articolo);
             $articolo = str_replace('$ALT$', $alt, $articolo);
