@@ -2,7 +2,8 @@
     width: 100%;
     float: left;
     text-align: center;
-    margin: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .comeContattarci {
@@ -12,13 +13,16 @@
     text-align: left;
     padding-left: 10px;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
-hr {
+.contatti hr {
     border: 1px solid;
+    background-color: blue;
     border-radius: 25px 25px 25px 25px;
     border-color: blue;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-right: 5%;
 
 }
 
@@ -83,10 +87,21 @@ hr {
 .sede {
     float: left;
     width: 50%;
-
+    margin-right: 0%;
 }
 
+.testoSede {
+    padding: 10px;
+    text-align: center;
+}
 
 .indirizzo img {
+    margin-left: 42%;
     width: 3em;
+    margin-bottom: 10px;
+}
+
+.indirizzoCompleto {
+    text-align: center;
+    font-size: 18px;
 }
