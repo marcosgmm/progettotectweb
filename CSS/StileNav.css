@@ -52,9 +52,9 @@ body {
 
 .logo {
     float: left;
-    margin-left: 1%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    padding-left: 2em;
+    padding-top: 0.7em;
+    padding-bottom: 0.2em;
     height: 50px;
     width: auto;
 }
