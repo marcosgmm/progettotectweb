@@ -23,12 +23,16 @@
 
                         $pag = $_GET['pagina'];
                         $_SESSION['PAGINA'] = $pag;
-                        $citta = file_get_contents("../HTML/$pag.html");
-                        $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
+                        //$citta = file_get_contents("../HTML/citta.html");
+                        //$pageHome = str_replace('$PAGINA$', $citta, $pageHome);
                         $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
                         $pageHome = str_replace('$CITTA$', $pag, $pageHome);
-                        $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
+                        $pageHome = str_replace('$PAGINA$', "", $pageHome);
+                        $pageHome = str_replace('$FOOTER$', "", $pageHome);
                         echo $pageHome;
+                        include "citta.php";
+                        $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
+                        echo $footer;
 
                          }
 
@@ -65,12 +69,17 @@
 
                         $pag = $_GET['pagina'];
                         $_SESSION['PAGINA'] = $pag;
-                        $citta = file_get_contents("../HTML/$pag.html");
-                        $pageHome = str_replace('$PAGINA$', $citta, $pageHome);
+                        //$citta = file_get_contents("../HTML/citta.html");
+                        //$pageHome = str_replace('$PAGINA$', $citta, $pageHome);
                         $pageHome = str_replace('$DOWN$', $nav2, $pageHome);
                         $pageHome = str_replace('$CITTA$', $pag, $pageHome);
-                        $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
+                        $pageHome = str_replace('$PAGINA$', "", $pageHome);
+                        $pageHome = str_replace('$FOOTER$', "", $pageHome);
                         echo $pageHome;
+                        include "citta.php";
+                        $pageHome = str_replace('$FOOTER$', $footer, $pageHome);
+                        echo $footer;
+
 
                          }
 
