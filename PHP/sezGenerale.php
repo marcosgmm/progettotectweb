@@ -1,4 +1,8 @@
 <?php
+
+    $sezione = $_SESSION['SEZIONE'];
+
+    if($sezione != "contatti"){
          mysqli_report(MYSQLI_REPORT_STRICT);
 
         try {
@@ -10,7 +14,6 @@
 
         $articolo = file_get_contents("../HTML/boxArticolo.html");
 
-        $sezione = $_SESSION['SEZIONE'];
         $citta = $_SESSION['PAGINA'];
 
         $conn = new mysqli("localhost","root","", "prova");
@@ -36,5 +39,12 @@
             $RIS = $conn -> query($SQL2);
         }
 
+    } else{
+        if($sezione == "contatti"){
+
+            $contatti = file_get_contents("../HTML/contatti.html");
+            echo $contatti;
+        }
+    }
 
 ?>
