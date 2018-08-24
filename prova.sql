@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Ago 23, 2018 alle 16:19
+-- Creato il: Ago 24, 2018 alle 10:30
 -- Versione del server: 10.1.34-MariaDB
 -- Versione PHP: 7.2.7
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `padova` (
   `sezione` varchar(45) NOT NULL,
-  `testo` varchar(700) NOT NULL,
+  `testo` varchar(10000) NOT NULL,
   `titolo` varchar(100) NOT NULL,
   `img` varchar(100) NOT NULL,
   `data` date NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `padova` (
 --
 
 INSERT INTO `padova` (`sezione`, `testo`, `titolo`, `img`, `data`, `alt`, `id`) VALUES
-('eventi', 'La sagra della polenta è molto bella, si trova in zona fiera!', 'SAGRA DELLA POLENTA', '../IMG/sagrapolenta.jpg', '2018-09-10', 'Persona che mescola la polenta', 1),
+('eventi', 'La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWFLa sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF <span id = \"dots\"> . . . </span><span id = \"more\">WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF La sagra della polenta è molto bella, si trova in zona fiera!asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dasssssssssss   daas d .FU EUF LWEUFL IUWEFIU WIE FUIWE BIWEU BIWEF IWF IB B  IU IUF IEFWU WEI WEUFIWEFUWI   WEUFIUIEFUWI WEIF WIEF IWEFU IWEFIU WIEFU IEWFIWEUWIEF UWIEFU WIEFUHW IEFU HWF</span>', 'SAGRA DELLA POLENTA', '../IMG/sagrapolenta.jpg', '2018-09-10', 'Persona che mescola la polenta', 1),
 ('eventi', 'Verrà demolita la preziosissima mensa Piovego il prossimo lunedì, teneti alla larga e festeggiate con i vostri più cari parenti!', 'Demolizione mensa piovego', '../IMG/mensa.jpg', '2018-08-31', 'Interno mensa piovego', 2);
 
 -- --------------------------------------------------------
