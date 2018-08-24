@@ -7,18 +7,31 @@
 
 .comeContattarci {
     float: left;
-    margin-left: 11%;
+    margin-left: 6%;
     width: 100%;
     text-align: left;
     padding-left: 10px;
     font-size: 20px;
 }
 
+hr {
+    border: 1px solid;
+    border-radius: 25px 25px 25px 25px;
+    border-color: blue;
+    margin-bottom: 15px;
+
+}
+
 .contatti {
     float: left;
-    width: 40%;
+    width: 45%;
     margin-bottom: 5px;
-    margin-left: 10%;
+    margin-left: 5%;
+}
+
+.fisso {
+    float: left;
+    width: 100%;
 }
 
 .logoNumeroFisso {
@@ -33,6 +46,10 @@
     font-size: 25px;
 }
 
+.mobile {
+    float: left;
+    width: 100%;
+}
 
 .logoNumeroMobile {
     float: left;
@@ -46,7 +63,10 @@
     font-size: 25px;
 }
 
-
+.eMail {
+    float: left;
+    width: 100%;
+}
 
 .immagineMail {
     float: left;
@@ -55,12 +75,17 @@
 }
 
 .indirizzoEmail {
-    padding: 15px;
+    padding: 20px;
     margin-left: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.sede {}
+.sede {
+    float: left;
+    width: 50%;
+
+}
+
 
 .indirizzo img {
     width: 3em;
