@@ -84,6 +84,23 @@
     font-size: 20px;
 }
 
+.telegramContatti {
+    float: left;
+    width: 100%;
+}
+
+.immagineTelegram {
+    float: left;
+    width: 3em;
+    padding: 10px;
+}
+
+.contattoTelegram {
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 .sede {
     float: left;
     width: 45%;
