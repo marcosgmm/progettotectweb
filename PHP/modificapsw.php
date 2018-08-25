@@ -46,12 +46,6 @@
 
             }
 
-
-
-
-
-
-
             $NomeUtente = $_SESSION['name'];
             $Cognome = $_SESSION['cognome'];
             $Email = $_SESSION['email'];
