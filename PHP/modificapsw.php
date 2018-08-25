@@ -13,88 +13,88 @@
 
         $email = $_SESSION['email'];
         $psw = $_SESSION['password'];
-
         $vecchiaPsw = $_POST['Vecchiapsw'];
         $nuovaPsw = $_POST['Nuovapsw'];
         $nuovaPsw2 = $_POST['Nuovapsw2'];
 
         $conn = new mysqli("localhost","root","", "prova");
 
-         if($psw != $vecchiaPsw){
-            mysqli_close($conn);
+        if($psw != $vecchiaPsw)
+           $messaggio = 1;
 
-            $profilo = file_get_contents("../HTML/profiloUtente.html");
+        else{ if(strlen($nuovaPsw)<8)
+                $messaggio = 2;
+            else{
+                if($nuovaPsw == $vecchiaPsw)
+                    $messaggio = 3;
+                else{
+                        if($nuovaPsw == $nuovaPsw2){
+                            $comandoSQL2 = "update utenti SET psw = '".$nuovaPsw."' where email = '".$email."'";
+                            $risultatoModifica = $conn -> query($comandoSQL2);
 
-            $NomeUtente = $_SESSION['name'];
-            $Cognome = $_SESSION['cognome'];
-            $Email = $_SESSION['email'];
-            $messaggio = "Password sbagliata!";
+                            if($risultatoModifica)
+                                $messaggio = 4;
 
-            $profilo = str_replace('$EMAIL$', $Email, $profilo);
-            $profilo = str_replace('$NOME$', $NomeUtente, $profilo);
-            $profilo = str_replace('$COGNOME$', $Cognome, $profilo);
-            $profilo = str_replace('$MESSAGGIO$', $messaggio, $profilo);
+                            else
+                                $messaggio = 5;     }
 
-            echo $profilo;
-            exit;
-        }
+                        else{
+                            $messaggio = 6;
+                            }
+                    }
+                }
 
-        if(strlen($nuovaPsw)<8){
-            mysqli_close($conn);
+            }
 
-            $profilo = file_get_contents("../HTML/profiloUtente.html");
 
-            $NomeUtente = $_SESSION['name'];
-            $Cognome = $_SESSION['cognome'];
-            $Email = $_SESSION['email'];
-            $messaggio = "La nuova password deve essere almeno 8 caratteri!";
 
-            $profilo = str_replace('$EMAIL$', $Email, $profilo);
-            $profilo = str_replace('$NOME$', $NomeUtente, $profilo);
-            $profilo = str_replace('$COGNOME$', $Cognome, $profilo);
-            $profilo = str_replace('$MESSAGGIO$', $messaggio, $profilo);
 
-            echo $profilo;
-            exit;
-        }
 
-        if($nuovaPsw == $nuovaPsw2){
-            $comandoSQL2 = "update utenti SET psw = '".$nuovaPsw."' where email = '".$email."'";
-            $risultatoModifica = $conn -> query($comandoSQL2);
-            if($risultatoModifica){
 
-            $profilo = file_get_contents("../HTML/profiloUtente.html");
 
             $NomeUtente = $_SESSION['name'];
             $Cognome = $_SESSION['cognome'];
             $Email = $_SESSION['email'];
-            $messaggio = "La tua password e' stata modificata!";
 
-            $profilo = str_replace('$EMAIL$', $Email, $profilo);
-            $profilo = str_replace('$NOME$', $NomeUtente, $profilo);
-            $profilo = str_replace('$COGNOME$', $Cognome, $profilo);
-            $profilo = str_replace('$MESSAGGIO$', $messaggio, $profilo);
-
-            echo $profilo;
-            exit;
-                                                }
-            else {
-                   mysqli_close($conn);
-                    header("Location: ../HTML/profiloUtente.html?cambiata=no");
-                    exit;  }
-        } else{
             $profilo = file_get_contents("../HTML/profiloUtente.html");
-            $NomeUtente = $_SESSION['name'];
-            $Cognome = $_SESSION['cognome'];
-            $Email = $_SESSION['email'];
-            $messaggio = "Le nuove password non corrispondono!";
-
             $profilo = str_replace('$EMAIL$', $Email, $profilo);
             $profilo = str_replace('$NOME$', $NomeUtente, $profilo);
             $profilo = str_replace('$COGNOME$', $Cognome, $profilo);
-            $profilo = str_replace('$MESSAGGIO$', $messaggio, $profilo);
 
-            echo $profilo;
-            exit;
-        }
+            switch($messaggio){
+                case '1':
+                    $mess = "Password sbagliata!";
+                    $profilo = str_replace('$MESSAGGIO$', $mess, $profilo);
+                    echo $profilo;
+                    break;
+                case '2':
+                    $mess = "La nuova password deve essere almeno 8 caratteri!";
+                    $profilo = str_replace('$MESSAGGIO$', $mess, $profilo);
+                    echo $profilo;
+                    break;
+                case '3':
+                    $mess = "La nuova password deve essere diversa dalla precedente!";
+                    $profilo = str_replace('$MESSAGGIO$', $mess, $profilo);
+                    echo $profilo;
+                    break;
+                case '4':
+                    $mess = "La tua password e' stata modificata!";
+                    $_SESSION['password'] = $nuovaPsw;
+                    $profilo = str_replace('$MESSAGGIO$', $mess, $profilo);
+                    echo $profilo;
+                    break;
+                case '5':
+                    $mess = "Modifica della password fallita";
+                    $profilo = str_replace('$MESSAGGIO$', $mess, $profilo);
+                    echo $profilo;
+                    break;
+                case '6':
+                    $mess = "Le nuove password non corrispondono!";
+                    $profilo = str_replace('$MESSAGGIO$', $mess, $profilo);
+                    echo $profilo;
+                    break;
+            }
+
+    mysqli_close($conn);
+
 ?>
